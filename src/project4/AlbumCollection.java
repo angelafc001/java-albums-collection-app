@@ -83,7 +83,7 @@ public class AlbumCollection {
         avg = new BigDecimal(avg).round(new MathContext(2)).doubleValue();
         return avg;
     }
-//insertion sort
+
 
     public void sortByArtist() {
         for (int i = 1; i < artist.size(); i++) {
@@ -103,7 +103,7 @@ public class AlbumCollection {
                         swap(artist, title, year, genre, price, j);
                     }
                 } catch (InvalidIndexException ex) {
-                    //shouldn't throw an exception
+                   
                 }
             }
         }
